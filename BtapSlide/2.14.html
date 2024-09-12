@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        form {
+            display: inline-block;
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            display: block;
+            margin: 10px auto;
+            padding: 8px;
+            width: 250px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        h2 {
+            color: #A52A2A;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://st3.depositphotos.com/10406516/35125/v/450/depositphotos_351250688-stock-illustration-mango-hand-drawn-modern-brush.jpg" alt="Mango Logo" width="230px" height="220px">
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">Location</a> |
+        <a href="#">Blog</a>
+    </nav>
+
+    <h2>Sign Up</h2>
+    <form action="/signup" method="POST">
+        <label for="/signup"> First name</label>
+        <input type="text" name="firstname"  minlength="2" maxlength="20" required>
+        
+        <label for="/signup"> Last Name</label>
+        <input type="text" name="lastname"  minlength="5" maxlength="50" required>
+        
+        <label for="/signup"> Email</label>
+        <input type="email" name="email"  minlength="15" maxlength="30" required>
+        
+        <label for="/signup"> Password</label>
+        <input type="password" name="password" minlength="8" maxlength="30" required>
+        
+        <label for="/signup"> Confirm password   </label>
+        <input type="password" name="confirmpassword"  minlength="8" maxlength="30" required>
+        <input type="submit" value="Sign Up">
+    </form>
+
+    <footer>
+        <p>Copyright by Mango.org</p>
+    </footer>
+
+</body>
+</html>
