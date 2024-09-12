@@ -35,20 +35,21 @@
 
     <h2>Sign Up</h2>
     <form action="/signup" method="POST">
-        <label for="/signup"> First name</label>
-        <input type="text" name="firstname"  minlength="2" maxlength="20" required>
+        <label for="firstname"> First name</label>
+        <input type="text" id="firstname" name="firstname" minlength="2" maxlength="20" required>
         
-        <label for="/signup"> Last Name</label>
-        <input type="text" name="lastname"  minlength="5" maxlength="50" required>
+        <label for="lastname"> Last Name</label>
+        <input type="text" id="lastname" name="lastname" minlength="5" maxlength="50" required>
         
-        <label for="/signup"> Email</label>
-        <input type="email" name="email"  minlength="15" maxlength="30" required>
+        <label for="email"> Email</label>
+        <input type="email" id="email" name="email" minlength="15" maxlength="30" required>
         
-        <label for="/signup"> Password</label>
-        <input type="password" name="password" minlength="8" maxlength="30" required>
+        <label for="password"> Password</label>
+        <input type="password" id="password" name="password" minlength="8" maxlength="30" required>
         
-        <label for="/signup"> Confirm password   </label>
-        <input type="password" name="confirmpassword"  minlength="8" maxlength="30" required>
+        <label for="confirmpassword"> Confirm password</label>
+        <input type="password" id="confirmpassword" name="confirmpassword" minlength="8" maxlength="30" required>
+        
         <input type="submit" value="Sign Up">
     </form>
 
