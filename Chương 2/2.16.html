@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Form</title>
+    <meta charset="utf-8"/>
+
+    <style>
+        body {
+            
+            text-align: left;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1><img src="https://www.mango.org/wp-content/uploads/2021/10/black_mango_eps.png" alt="Mango Logo" width="400"></h1>
+    
+    <form >
+        <table>
+            <tr>
+                <td><label for="email">Email Address:</label></td>
+                <td><input type="email" id="email" name="email" minlength="1" required></td>
+            </tr>
+            <tr>
+                <td><label for="date">Date of booking:</label></td>
+                <td><input type="date" id="date" name="date" required></td>
+            </tr>
+            <tr>
+                <td><label for="number">Number of people:</label></td>
+                <td><input type="number" id="number" name="number" min="1" max="8" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="dy" name="dy" required>
+                    <label for="dy">I agree to the cancellation policy</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <button type="submit">Book Now</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
