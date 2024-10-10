@@ -1,0 +1,64 @@
+
+/* CSS cho phần đánh giá sao */
+
+        
+        .rating {
+            align-items: baseline;
+            display:inline-flex;
+            justify-content: flex-end;
+            flex-direction: row-reverse;
+        }
+        .rating form {
+            display: flex;
+            flex-direction: row-reverse; 
+        }
+
+        .rating input {
+            display: none; /* Ẩn radio button */
+        }
+
+        .rating label {
+            font-size: 24px;
+            cursor: pointer;
+            color: #ccc; /* Màu sao chưa chọn */
+            transition: color 0.2s;
+        }
+
+        .rating label:hover,
+        .rating input:checked ~ label {
+            color: gold; /* Màu vàng khi hover hoặc chọn */
+        }
+
+        /* Căn chỉnh phần màu sắc */
+        .colors {
+            border:2px;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        .color {
+            text-align: right;
+            display: flex;
+            border: 1px solid;
+            margin: 3px;
+            padding :5px;
+        }
+
+        .color img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 5px;
+        }
+
+        /* CSS cho toàn trang */
+        .product {
+
+            max-width: 600px;
+            margin: auto;
+        }
+        .text{
+            font-size: 23px;
+            font-weight: bold;
+        }
+        

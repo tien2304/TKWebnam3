@@ -1,0 +1,47 @@
+.cla{
+    
+    background-color: aqua;
+    display: flex;
+}
+.cla-item{
+    list-style: none;
+    margin: 0 8px;
+    flex-direction: row;
+    padding: 2px;
+
+}
+.list2{
+    padding-left: 0;
+    margin: auto 16px;
+}
+@media (max-width: 768px) {
+    .cla {
+        justify-content: center;
+
+    }
+   
+}
+@media (min-width: 768px) and (max-width: 1042px) {
+  
+    .cla-item{
+        display: inline-block;
+
+    }
+    .cla {
+        justify-content: space-around;
+
+    }
+}
+
+@media (min-width: 1042px) {
+    
+    .cla-item{
+        display: inline-block;
+
+    }
+    .cla {
+        justify-content: flex-end;
+
+    }
+    
+}
